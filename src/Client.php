@@ -47,6 +47,10 @@ class Client {
         CURLOPT_BINARYTRANSFER => true,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_TIMEOUT => 60,
+        CURLOPT_FOLLOWLOCATION => true,
+		CURLOPT_ENCODING => '',
+		CURLOPT_MAXREDIRS => 1,
+		CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_NONE,
     );
 
     /**
